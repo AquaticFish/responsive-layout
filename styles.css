@@ -19,6 +19,12 @@ aside{ /* Green box */
 
 footer{ /* Footer */
     background-color: #d9043d;
+    color:#ffff;
+    margin: 5px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
