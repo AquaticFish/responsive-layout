@@ -3,12 +3,20 @@
     display: flex;
     flex-direction: row;
     margin-top: 25px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
 }
 
 figure {
-    /* img + caption */
-    display: inline-block;
-    max-width: 100%
+    /* img + caption display: inline-block; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+figcaption {
+    /* caption */
+    padding-left: 1rem;
 }
 
 main {
@@ -20,12 +28,13 @@ main {
 #container img {
     /* puffin img */
     border: 5px solid #d9043d;
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
-
-
 }
+
+
+
 
 .header-container {
     /* Header */
@@ -35,6 +44,8 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -47,19 +58,20 @@ aside {
     background-color: #97bf04;
     padding: 10px 10px 10px 10px;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 footer {
     /* Footer */
     background-color: #d9043d;
     color: #ffff;
-    margin: 5px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-height: 100%;
+    width: auto;
 
 }
 
@@ -76,8 +88,15 @@ footer {
     }
 }
 
-h1 {
-    border: 3px solid black;
+
+.header-container {
+    /* Header */
+    background-color: #120323;
+    color: #97bf04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -85,6 +104,12 @@ h1 {
 @media screen and (max-width: 500px) {
     main {
         background-color: coral;
+    }
+
+    #container {
+        /* main */
+        margin-top: 0;
+
     }
 
     .header-container {
@@ -95,12 +120,34 @@ h1 {
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        padding: 1rem;
     }
 
+    #container img {
+        /* puffin img */
+        border: 5px solid #d9043d;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    figure {
+        /* img + caption display: inline-block; */
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    figcaption {
+        /* caption */
+        padding: 0;
+    }
 
 }
+/*
+- background to touch page
+-img
+-sticky footer (Static)
+*/
+
 
 /*
 header background color & name of animal: #120323
