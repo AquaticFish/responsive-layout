@@ -4,7 +4,7 @@ CSS Responsive Layout
 
 # Reference/Citation
 
-W3School (n.d) W3School. Retrieved Sep 12, 2025  http://w3schools.com/ 
+W3School (n.d) W3School. Retrieved Oct 19, 2025  http://w3schools.com/ 
 
 Stackoverflow (n.d) Stackoverflow. Retrieved Oct 19, 2025 https://stackoverflow.com/questions
 
