@@ -1,38 +1,53 @@
+body {
+    /* EVERYTHING */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
 #container {
-    /* main */
+    /* Puffin img + Caption + Aside (middle area) */
     display: flex;
     flex-direction: row;
     margin-top: 25px;
     padding-bottom: 15px;
-    font-family: sans-serif;
+}
+
+
+#container img {
+     /* Puffin img  */
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 figure {
-    /* img + caption display: inline-block; */
-    max-width: 100%;
+    /* Puffin img + Caption  */
     display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    max-width: 100%;
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+figure img {
+    /* Puffin img  */
+    flex: 0 1 40%;
+    max-width: 100%;
+    height: auto;
+    border: solid 5px #d9043d;
 }
 
 figcaption {
-    /* caption */
+    /* Caption */
+    flex: 1;
     padding-left: 1rem;
-}
 
-main {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
 }
-
-#container img {
-    /* puffin img */
-    border: 5px solid #d9043d;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 
 
 
@@ -54,7 +69,7 @@ h1 {
 }
 
 aside {
-    /* Green box */
+    /* Green box aka aside box */
     background-color: #97bf04;
     padding: 10px 10px 10px 10px;
     height: 100%;
@@ -77,39 +92,14 @@ footer {
 
 
 
-@media only screen and (max-width:850px) {
-    main {
-        background-color: blue;
-    }
-
-    #container {
-        /* main */
-        display: inline-block;
-    }
-}
-
-
-.header-container {
-    /* Header */
-    background-color: #120323;
-    color: #97bf04;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-
-
-@media screen and (max-width: 500px) {
-    main {
-        background-color: coral;
-    }
+@media only screen and (max-width:999px) {
+  /* -1000 */
 
     #container {
         /* main */
         margin-top: 0;
-
+        display: flex;
+        flex-direction: column;
     }
 
     .header-container {
@@ -122,32 +112,90 @@ footer {
         text-align: center;
     }
 
+
     #container img {
-        /* puffin img */
-        border: 5px solid #d9043d;
-        width: 100%;
+        max-width: 50%;
         height: auto;
         display: block;
+        margin: 0 auto;
     }
 
     figure {
-        /* img + caption display: inline-block; */
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
         max-width: 100%;
-        display: inline-block;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    figure img {
+        flex: 0 1 40%;
+        max-width: 100%;
+        height: auto;
+        border: solid 5px #d9043d;
     }
 
     figcaption {
-        /* caption */
-        padding: 0;
+        flex: 1;
+        padding-left: 1rem;
+
     }
 
 }
-/*
-- background to touch page
--img
--sticky footer (Static)
-*/
 
+
+@media screen and (max-width: 767px) {
+/* -768 */
+
+    #container {
+        /* main */
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 auto;
+    }
+
+    .header-container {
+        /* Header */
+        background-color: #120323;
+        color: #97bf04;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0 auto;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border: solid 5px #d9043d;
+        padding: 0 auto;
+        display: block;
+    }
+    
+
+    #container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+}
 
 /*
 header background color & name of animal: #120323
@@ -156,5 +204,4 @@ footer background colour & image frame: #d9043d
 The puffin image should never be cut off as it is a key element on the page
 The site uses a sans-serif font
 Any spacing not defined can be estimated, but should allow for fluid and responsive design
-
-*/
+*/ 
