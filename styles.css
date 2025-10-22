@@ -16,11 +16,11 @@ body {
 
 
 #container img {
-     /* Puffin img  */
+    /* Puffin img  */
     max-width: 50%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 figure {
@@ -36,20 +36,10 @@ figure {
 
 figure img {
     /* Puffin img  */
-    flex: 0 1 40%;
     max-width: 100%;
     height: auto;
     border: solid 5px #d9043d;
 }
-
-figcaption {
-    /* Caption */
-    flex: 1;
-    padding-left: 1rem;
-
-}
-
-
 
 .header-container {
     /* Header */
@@ -93,7 +83,7 @@ footer {
 
 
 @media only screen and (max-width:999px) {
-  /* -1000 */
+    /* -1000 */
 
     #container {
         /* main */
@@ -114,10 +104,10 @@ footer {
 
 
     #container img {
-        max-width: 50%;
+        max-width: 30%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 0;
     }
 
     figure {
@@ -131,30 +121,23 @@ footer {
     }
 
     figure img {
-        flex: 0 1 40%;
         max-width: 100%;
         height: auto;
         border: solid 5px #d9043d;
-    }
-
-    figcaption {
-        flex: 1;
-        padding-left: 1rem;
-
     }
 
 }
 
 
 @media screen and (max-width: 767px) {
-/* -768 */
+    /* -768 */
 
     #container {
         /* main */
         margin-top: 0;
         display: flex;
         flex-direction: column;
-        padding: 0 auto;
+        padding: 0;
     }
 
     .header-container {
@@ -175,24 +158,23 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         gap: 1rem;
-        padding: 0 auto;
+        padding: 0;
     }
 
     figure img {
         max-width: 100%;
         height: auto;
         border: solid 5px #d9043d;
-        padding: 0 auto;
+        padding: 0;
         display: block;
     }
-    
 
     #container img {
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;
-        padding: 0 auto;
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -204,4 +186,4 @@ footer background colour & image frame: #d9043d
 The puffin image should never be cut off as it is a key element on the page
 The site uses a sans-serif font
 Any spacing not defined can be estimated, but should allow for fluid and responsive design
-*/ 
+*/
